@@ -7,9 +7,6 @@ package {{options.package}}.event;
 
 import lombok.*;
 
-{{#checkDateType fieldDescriptors}} {{/checkDateType}}
-{{#checkBigDecimal fieldDescriptors}} {{/checkBigDecimal}}
-
 @Data
 @ToString
 public class {{eventValue.namePascalCase}}Event {
@@ -33,6 +30,4 @@ public class {{eventValue.namePascalCase}}Event {
         // } 
         //else if (enum) return "String"
     })
-
-
 </function>
